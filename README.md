@@ -16,11 +16,11 @@ It will speak the exact same murmuration as every other client. A flock you join
 
 ## How it's built (planned)
 
-Starling Desktop is a **thin UI over a shared core**. The frontend is **Solid.JS**, wrapped in a **Tauri** shell whose Rust backend is the [`starling-server`](https://forgejo.hearthhome.lol/Saltfault/Starling-Server) library — so all the hard parts (the iroh endpoint, gossip, encryption, and the voice/video pipelines) are shared with every other client. This repo contains the Solid.JS UI and the Tauri glue that pumps `Command`/`AppEvent` messages between the UI and that core.
+Starling Desktop is a **thin UI over a shared core**. The frontend is **SolidJS**, wrapped in a **Tauri** shell whose Rust backend is the [`starling-server`](https://forgejo.hearthhome.lol/Saltfault/Starling-Server) library — so all the hard parts (the iroh endpoint, gossip, encryption, and the voice/video pipelines) are shared with every other client. This repo contains the SolidJS UI and the Tauri glue that pumps `Command`/`AppEvent` messages between the UI and that core.
 
 | Piece | Stack |
 |-------|-------|
-| Frontend | Solid.JS |
+| Frontend | SolidJS |
 | App shell | Tauri |
 | Protocol / networking | [`starling-server`](https://forgejo.hearthhome.lol/Saltfault/Starling-Server) library (Tauri's Rust backend) |
 | Target platforms | Windows, macOS, Linux |
